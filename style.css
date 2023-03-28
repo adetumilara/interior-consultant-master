@@ -1,0 +1,269 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #181719;
+  color: #FFFFFF;
+}
+
+.mainContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+  margin-left: 77px;
+  margin-bottom: 151px;
+}
+
+
+.navLeft li{
+  list-style: none;
+  padding: 8px;
+  border: 1px #FFFFFF solid;
+ 
+}
+.navLeft li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Crimson Pro', serif;
+}
+
+.navList{
+  display: flex;
+  /* justify-content: space-between; */
+  
+}
+
+.navList li{
+  list-style: none;
+  margin-right: 86px;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.navList li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.navList li a:hover{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-right: 87px;
+}
+
+.content1{
+  margin-top: 150px;
+  
+  width: 30%;
+}
+
+.heading{
+  margin-bottom: 40px;
+  font-family: 'Lora', serif;
+  font-size: 48px;
+  line-height: 61px;
+}
+
+.paragraph{
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.button{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.content2{
+  width: 50%;
+  position: relative;
+}
+
+.content2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.box{
+  width: 60%;
+  height: auto;
+  background-color: #181719;
+  position: absolute;
+  bottom: -100px;
+  right: 30px;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-items: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.content img{
+  width: 15%;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.box h2{
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  
+}
+
+.text h3{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text h4{
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(130, 130, 130, 1);
+  margin-top: 8px;
+}
+
+.closeMenu{
+  display: none;
+}
+
+.mobileVersion{
+  display: none;
+}
+
+.openMenu{
+  display: none;
+}
+
+.d-none{
+  display: none;
+}
+
+@media only screen and (max-width: 775px){
+  .navRight{
+    display: none;
+  }
+
+  .navList li{
+    list-style: none;
+    margin-right: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 21px;
+  }
+ 
+
+  .navLeft{
+    margin-left: 0;
+    /* display: none; */
+   }
+   
+
+  .openMenu{
+    display: block;
+    margin-right: 20px;
+    font-size: 29px;
+    /* display: none; */
+  }
+
+  .closeMenu{
+    display: block;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+
+  .mobileVersion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-end;
+    justify-items: center;
+    display: none;
+  }
+
+  .navList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 20px;
+  }
+
+  .content1{
+    margin-top: 30px;
+    /* margin-right: 87px; */
+    width: 100%;
+  }
+
+  .content2{
+    width: 80%;
+    position: relative;
+    margin-top: 50px;
+
+  }
+
+  .box{
+    width: 80%;
+    height: auto;
+    background-color: #181719;
+    position: absolute;
+    bottom: -100px;
+    left: 30px;
+  }
+
+}
